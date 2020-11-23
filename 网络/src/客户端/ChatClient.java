@@ -47,6 +47,7 @@ public class ChatClient {//创建公共类
                     out.writeUTF("客户端：" + send);//将客户端的信息传递给服务器             
                     String accpet = in.readUTF();// 读取来自服务器的信息
                     System.out.println(accpet);//输出来自服务器的信息
+                   
                 }
 
             } finally {

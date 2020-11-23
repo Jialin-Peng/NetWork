@@ -41,7 +41,8 @@ public class ChatServer {//ChatServer类
                     System.out.println(accpet);//输出来自客户端的信息  
                     String send = scanner.nextLine();//nextLine方式接受字符串  
                     System.out.println("服务器：" + send);//输出提示信息                        
-                    out.writeUTF("服务器：" + send);//把服务器端的输入发给客户端   
+                    out.writeUTF("服务器：" + send);//把服务器端的输入发给客户端  
+                   
                 }  
             } finally {// 建立连接失败的话不会执行socket.close();
                 socket.close();//关闭连接 
